@@ -1,0 +1,3 @@
+services:
+  ffc-sfd-business:
+    command: npm run start:debug

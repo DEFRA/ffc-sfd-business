@@ -1,0 +1,10 @@
+services:
+  ffc-sfd-business:
+    build:
+      context: .
+      target: production
+    image: ffc-sfd-business
+    container_name: ffc-sfd-business
+    environment:
+      APPINSIGHTS_CLOUDROLE: ffc-sfd-business-local
+      APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}

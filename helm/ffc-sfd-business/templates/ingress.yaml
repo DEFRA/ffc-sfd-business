@@ -1,0 +1,3 @@
+{{- include "adp-helm-library.azure-ingress" (list . "ffc-sfd-business.ingress") -}}
+{{- define "ffc-sfd-business.ingress" -}}
+{{- end -}}
