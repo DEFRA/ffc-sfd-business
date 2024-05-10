@@ -37,6 +37,7 @@ resources:
 extends:
   template: /pipelines/common-app-build.yaml@DEFRA-ADPPipelineCommon
   parameters:
+    programmeName: "ffc"
     projectName: "ffc-sfd-business"
     serviceName: "ffc-sfd-business"
     deployFromFeature: ${{ parameters.deployFromFeature }}
@@ -52,5 +53,3 @@ extends:
       filetype: "yaml"
       variableGroups:
         - ffc-sfd-business-<environment>
-      variables:
-        - ffc-sfd-business-APPINSIGHTS-CONNECTIONSTRING
