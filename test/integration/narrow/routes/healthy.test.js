@@ -1,10 +1,10 @@
-const { createServer } = require('../../app/server')
+const { createServer } = require('../../../../app/server')
 
 let server
 
 beforeEach(async () => {
   server = await createServer()
-  await server.start()
+  await server.initialize()
 })
 
 afterEach(async () => {
